@@ -1,0 +1,21 @@
+Build a Java application using maven and War deployment on Azure VM using Azure DevOps pipeline:
+
+Pre requisites are Azure DevOps account, Azure cloud account to create window vm
+
+Need to create one windows vm in azure cloud
+
+we need to make this vm as a self hosted windows agent then only our pipeline will execute in this vm
+
+For this, go through this link https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops or Azure DevOps pipeline tutorial in DevOps mela
+
+After configuring self hosted agent, we need to see the agent is online or not, If it is online it is working otherwise it is not
+
+Check the capabilities of the agent, Need to add capabilites which we need Ex: Maven
+
+Install Java, Maven and Application server(Jboss) in the windows vm and configure environmental variables of Java and Maven
+
+In Azure DevOps, create a project and create a pipeline
+
+In pipeline, we need to configure repo which is having java code and build tool to build the code then automatically pipeline script will come
+
+Run the Pipeline, If any errors, troubleshoot till the pipeline works
